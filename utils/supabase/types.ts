@@ -91,7 +91,7 @@ export type Database = {
           address?: string | null;
           created_at?: string | null;
           description?: string | null;
-          id: string;
+          id?: string;
           imgs?: string[] | null;
           is_featured?: boolean | null;
           products: Json;
