@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instanciate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "12.2.3 (519615d)";
+    PostgrestVersion: "12.2.12 (cd3cf9e)";
   };
   graphql_public: {
     Tables: {
@@ -39,36 +39,6 @@ export type Database = {
   };
   public: {
     Tables: {
-      credentials: {
-        Row: {
-          created_at: string;
-          desc: string | null;
-          id: string;
-          imgs: Json;
-          title: string;
-          type: string;
-          uploader: string | null;
-        };
-        Insert: {
-          created_at?: string;
-          desc?: string | null;
-          id?: string;
-          imgs: Json;
-          title: string;
-          type: string;
-          uploader?: string | null;
-        };
-        Update: {
-          created_at?: string;
-          desc?: string | null;
-          id?: string;
-          imgs?: Json;
-          title?: string;
-          type?: string;
-          uploader?: string | null;
-        };
-        Relationships: [];
-      };
       products: {
         Row: {
           created_at: string;
@@ -121,7 +91,7 @@ export type Database = {
           address?: string | null;
           created_at?: string | null;
           description?: string | null;
-          id?: string;
+          id: string;
           imgs?: string[] | null;
           is_featured?: boolean | null;
           products: Json;
@@ -144,75 +114,6 @@ export type Database = {
           title?: string;
           updated_at?: string | null;
           uploader?: string | null;
-        };
-        Relationships: [];
-      };
-      team: {
-        Row: {
-          created_at: string;
-          description: string;
-          id: string;
-          img: string;
-          name: string;
-          position: string;
-          updated_at: string;
-          uploader: string | null;
-        };
-        Insert: {
-          created_at?: string;
-          description: string;
-          id?: string;
-          img: string;
-          name: string;
-          position: string;
-          updated_at?: string;
-          uploader?: string | null;
-        };
-        Update: {
-          created_at?: string;
-          description?: string;
-          id?: string;
-          img?: string;
-          name?: string;
-          position?: string;
-          updated_at?: string;
-          uploader?: string | null;
-        };
-        Relationships: [];
-      };
-      testimonials: {
-        Row: {
-          approved_at: string | null;
-          approved_by: string | null;
-          created_at: string;
-          id: string;
-          is_approved: boolean | null;
-          message: string;
-          sender_company: string;
-          sender_email: string;
-          sender_name: string;
-        };
-        Insert: {
-          approved_at?: string | null;
-          approved_by?: string | null;
-          created_at?: string;
-          id?: string;
-          is_approved?: boolean | null;
-          message: string;
-          sender_company: string;
-          sender_email: string;
-          sender_name: string;
-        };
-        Update: {
-          approved_at?: string | null;
-          approved_by?: string | null;
-          created_at?: string;
-          id?: string;
-          is_approved?: boolean | null;
-          message?: string;
-          sender_company?: string;
-          sender_email?: string;
-          sender_name?: string;
         };
         Relationships: [];
       };
