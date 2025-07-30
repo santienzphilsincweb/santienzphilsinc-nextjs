@@ -24,6 +24,7 @@ import {
 } from "react-icons/bi";
 import CTABtn from "./CTA-btn";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 export type Pages = {
   hideCTA?: boolean;
   hideBrochure?: boolean;
@@ -161,8 +162,15 @@ const MobileNavigation = ({
   hideTestimonials = true,
   hideCredentials,
 }: Pages) => {
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   return (
-    <Sheet>
+    <Sheet onOpenChange={setOpen} open={open}>
       <SheetTrigger className="xmd:hidden">
         <BiMenu id="header-burger-icon" className="size-5 cursor-pointer" />
       </SheetTrigger>
