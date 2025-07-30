@@ -193,9 +193,9 @@ export default async function Project({
                   className="h-full w-full object-cover"
                   src={img}
                   alt={`image-${i}-of-${data.slug}`}
-                  quality={50}
-                  width={720}
-                  height={480}
+                  quality={images.length > 1 ? 50 : 100}
+                  width={images.length > 1 ? 720 : 1080}
+                  height={images.length > 1 ? 480 : 720}
                   loading="eager"
                   placeholder="blur"
                   blurDataURL={blurDataURL}
