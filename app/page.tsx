@@ -126,19 +126,19 @@ export default async function Home() {
           />
         </div>
         <div className="mx-auto mt-8 grid w-fit max-w-6xl grid-cols-2 gap-4 px-4 sm:grid-cols-4">
-          <div>
+          <div className="space-x-1">
             <Medal className="text-tertiary inline size-6" />
             <h3 className="text-muted-foreground inline">Certified</h3>
           </div>
-          <div>
+          <div className="space-x-1">
             <Users className="text-tertiary inline size-6" />
             <h3 className="text-muted-foreground inline">Expert</h3>
           </div>
-          <div>
+          <div className="space-x-1">
             <CheckCircle className="text-tertiary inline size-6" />
             <h3 className="text-muted-foreground inline">Proven</h3>
           </div>
-          <div>
+          <div className="space-x-1">
             <BicepsFlexed className="text-tertiary inline size-6" />
             <h3 className="text-muted-foreground inline">Reliable</h3>
           </div>

@@ -17,7 +17,7 @@ export default function CredentialsSlider({ className }: Props) {
         p="Our credentials reflect our dedication to delivering reliable flooring solutions and maintaining the highest standards in every project we undertake."
         alignment="left-only"
       />
-      <div className="xmd:px-4 mx-auto max-w-6xl px-1">
+      <div className="xmd:px-4 mx-auto max-w-6xl px-1 drop-shadow-lg">
         <InfiniteMovingCards
           items={CREDS_INFO.map((cert) => ({ ...cert, img: cert.img }))}
         />

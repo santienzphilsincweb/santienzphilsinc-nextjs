@@ -92,7 +92,7 @@ export const InfiniteMovingCards = ({
             className="my-auto"
           >
             <li
-              className="xmd:w-[312px] bg-background/50 relative h-fit w-[244px] max-w-full shrink-0 rounded-md border shadow-lg dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
+              className="xmd:w-[312px] bg-background/50 relative h-fit w-[244px] max-w-full shrink-0 rounded-md border  dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
               key={item.title}
             >
               <div className="xmd:p-4 p-1">
@@ -103,7 +103,7 @@ export const InfiniteMovingCards = ({
                   loading="lazy"
                   src={item.img}
                   alt={item.title}
-                  className="aspect-auto max-h-82 w-full rounded-md border object-fill object-top shadow"
+                  className="aspect-auto max-h-82 w-full rounded-md border object-fill object-top"
                 />
               </div>
               <h3 className="xmd:px-4 xmd:pt-0 xmd:pb-4 text-primary px-1 pt-1 pb-1 text-center font-semibold">
