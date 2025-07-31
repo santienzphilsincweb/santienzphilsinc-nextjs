@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [
       {
         src: "/favicon.ico",
-        sizes: "64x64",
+        sizes: "192x192",
         type: "image/x-icon",
       },
       {
