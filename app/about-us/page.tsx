@@ -38,7 +38,7 @@ export default function AboutUs() {
   return (
     <>
       <section className="relative">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-x-16 gap-y-4 px-4 pt-24 sm:pt-32 lg:grid-cols-2">
+        {/* <div className="mx-auto grid max-w-6xl grid-cols-1 gap-x-16 gap-y-4 px-4 pt-24 sm:pt-32 lg:grid-cols-2">
           <Heading1AndP
             h1="About Us"
             p="Over the years, we have successfully completed more than 1 million square meters of installations across the Philippines, demonstrating our commitment to quality, innovation, and nationwide service."
@@ -55,7 +55,19 @@ export default function AboutUs() {
               className="bg-foreground/10 aspect-video w-full rounded-md"
             ></iframe>
           </div>
-        </div>
+        </div> */}
+        <Heading1AndP
+          h1andpParentClass="mx-auto px-4 pt-24 sm:pt-32 max-w-6xl"
+          h1="About Us"
+          p="Over the years, we have successfully completed more than 1 million square meters of installations across the Philippines, demonstrating our commitment to quality, innovation, and nationwide service."
+          withCta
+          alignment="center-only"
+        >
+          <CTABtn variant="tertiary" noGlow wShadow href="/projects">
+            See All Projects
+          </CTABtn>
+        </Heading1AndP>
+
         <LinearGradientMask />
       </section>
       <section className="mx-auto mt-12 max-w-6xl space-y-6">
